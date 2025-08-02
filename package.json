@@ -1,0 +1,16 @@
+{
+  "name": "kickbook",
+  "version": "1.0.0",
+  "description": "Futsal Booking Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "server": "npm run start --prefix server",
+    "server-dev": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client\"",
+    "seed": "npm run seed --prefix server"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
